@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1.0, width=device-width"><title>Test</title><style>/**********main styles********/
+/* line 3, ../sass/styles.scss */
+body {
+  margin: 0;
+}
+
+/* line 6, ../sass/styles.scss */
+.cols {
+  float: left;
+}
+
+/* line 9, ../sass/styles.scss */
+.cols-3-2x {
+  width: 66.64%;
+}
+
+/* line 12, ../sass/styles.scss */
+.cols-6 {
+  width: 16.66%;
+}
+
+/* line 15, ../sass/styles.scss */
+.col-4 {
+  width: 25%;
+}
+
+/* line 18, ../sass/styles.scss */
+.content {
+  padding: 15px;
+}
+
+/* line 21, ../sass/styles.scss */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/**********************/
+/* line 27, ../sass/styles.scss */
+.header {
+  background: #88a3d6;
+  min-height: 60px;
+}
+
+/****************************/
+/* line 32, ../sass/styles.scss */
+.wrapper {
+  padding: 30px 15px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 38, ../sass/styles.scss */
+.wrapper .cols .row {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 46, ../sass/styles.scss */
+.wrapper .leftBkock img:nth-child(1) {
+  display: none;
+}
+
+/*******tablet version******/
+@media screen and (max-width: 768px) {
+  /* line 54, ../sass/styles.scss */
+  .cols-6 {
+    width: 25%;
+  }
+
+  /* line 57, ../sass/styles.scss */
+  .cols-3-2x {
+    width: 75%;
+  }
+
+  /* line 60, ../sass/styles.scss */
+  .cols-6:last-child {
+    float: initial;
+  }
+}
+/*******mobile version**********/
+@media screen and (max-width: 540px) {
+  /* line 66, ../sass/styles.scss */
+  .rightBlock {
+    display: none;
+  }
+
+  /* line 69, ../sass/styles.scss */
+  .mobile {
+    clear: both;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* line 75, ../sass/styles.scss */
+  .cols-3-2x, .cols-6 {
+    width: 100%;
+  }
+
+  /* line 78, ../sass/styles.scss */
+  .col-4 {
+    width: 50%;
+  }
+
+  /* line 81, ../sass/styles.scss */
+  .cols-6:last-child {
+    float: left;
+  }
+
+  /* line 84, ../sass/styles.scss */
+  .wrapper {
+    padding: 30px 0;
+  }
+  /* line 88, ../sass/styles.scss */
+  .wrapper .leftBkock img:nth-child(1) {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+</style><body class="page"><header class="header page__header"></header><main class="wrapper"><div class="cols cols-6 rightBlock"><div class="content"><img src="images/img_1.jpg" alt="1"></div></div><div class="cols cols-3-2x centerBlock"><div class="row"><div class="mobile"><div class="cols col-4"><div class="content"><img src="images/img_2.jpg" alt="2"></div></div><div class="cols col-4"><div class="content"><img src="images/img_4.jpg" alt="3"></div></div></div><div class="mobile"><div class="cols col-4"><div class="content"><img src="images/img_6.jpg" alt="4"></div></div><div class="cols col-4"><div class="content"><img src="images/img_8.jpg" alt="5"></div></div></div></div><div class="row"><div class="mobile"><div class="cols col-4"><div class="content"><img src="images/img_3.jpg" alt="6"></div></div><div class="cols col-4"><div class="content"><img src="images/img_5.jpg" alt="7"></div></div></div><div class="mobile"><div class="cols col-4"><div class="content"><img src="images/img_7.jpg" alt="8"></div></div><div class="cols col-4"><div class="content"><img src="images/img_9.jpg" alt="9"></div></div></div></div></div><div class="cols cols-6 leftBkock"><div class="content"><img src="images/img_1.jpg" alt="1"><img src="images/img_10.jpg" alt="10"></div></div></main><footer class="footer page__footer leftBlock"></footer></body></head></html>
